@@ -2,6 +2,8 @@
 
 Un test de autoevaluación para el COVID-19 de código abierto que devuelve los mismos resultados que [coronamadrid.com](https://www.coronamadrid.com/) pero no almacena tus valiosos datos.
 
+Puedes acceder a él a través de este enlace: https://celiavelmar.github.io/open-covid19-test/
+
 ### Aplicación de la Comunidad de Madrid
 
 [La aplicación de autoevaluación de la Comunidad de Madrid para COVID-19: es oficial, da acceso a tus datos a empresas privadas y no los anonimiza](https://maldita.es/malditatecnologia/2020/03/20/aplicacion-madrid-coronavirus-oficial-comparte-datos-empresas/)
