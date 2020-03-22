@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ question }}</p>
+    <p class="question">{{ question }}</p>
     <input type="radio" :name="name" value="true" :id="name + 'True'" />
     <label :for="name + 'True'">Sí</label>
     <br />
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style>
-p {
+.question {
   text-align: left;
   text-align-last: left;
   margin-bottom: 0;

@@ -99,6 +99,7 @@ export default {
 
 <style>
 .test {
+  padding-top: 30px;
   display: flex;
   flex-direction: row;
 }
@@ -106,19 +107,5 @@ export default {
 .margin-container {
   display: flex;
   width: 15%;
-}
-
-button {
-  padding: 5px;
-  color: white;
-  background-color: cornflowerblue;
-  border: none;
-  border-radius: 4px;
-
-  font-family: Inter, sans-serif;
-  font-size: 120%;
-
-  margin-top: 30px;
-  margin-bottom: 50px;
 }
 </style>

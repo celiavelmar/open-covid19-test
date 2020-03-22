@@ -1,17 +1,5 @@
 <template>
   <div id="app">
-    <div class="nav">
-      <!-- <router-link to="/">Home</router-link> |
-       -->
-      <a
-        href="https://github.com/celiavelmar/open-covid19-test"
-        target="_blank"
-        class="github-button"
-      >
-        Ver en
-        <font-awesome-icon :icon="['fab', 'github']"></font-awesome-icon>
-      </a>
-    </div>
     <router-view />
   </div>
 </template>
@@ -23,7 +11,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
 html,
 body {
@@ -40,6 +28,7 @@ body {
 
 #app {
   font-family: Inter, sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -59,7 +48,19 @@ h2 {
 }
 
 button {
+  cursor: pointer;
+
+  padding: 5px;
+  color: white;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 4px;
+
   font-family: Inter, sans-serif;
+  font-size: 120%;
+
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .nav {
