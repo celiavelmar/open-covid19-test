@@ -37,6 +37,7 @@
           name="twentyDays"
         ></radio-question>
         <div class="right">
+          <router-link class="back" to="/">Volver</router-link>
           <button type="submit">
             Obtener resultados
           </button>
@@ -56,7 +57,7 @@ export default {
     RadioQuestion
   },
   methods: {
-    getEvaluation: submitEvent => {
+    getEvaluation(submitEvent) {
       const questions = submitEvent.target;
       const answers = {
         airShortness: questions.airShortness.value === 'true' ? true : false,
@@ -87,11 +88,18 @@ export default {
         }
       }
 
+      this.$store.commit('filledInTest');
       if (score >= 30) {
-        // TODO Route to result with sympthoms
+        this.$store.commit('hasSympthoms', true);
       } else {
-        // TODO Route to result with no sympthoms
+        this.$store.commit('hasSympthoms', false);
       }
+      this.showResults();
+    },
+    showResults() {
+      this.$router.push({
+        name: 'Results'
+      });
     }
   }
 };
@@ -107,5 +115,9 @@ export default {
 .margin-container {
   display: flex;
   width: 15%;
+}
+
+.back {
+  margin-right: 20px;
 }
 </style>

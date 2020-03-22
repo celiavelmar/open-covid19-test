@@ -5,10 +5,7 @@
     </div>
     <div>
       <p>
-        La información obtenida a través del uso de esta aplicación no sustituye
-        ni pretende sustituir, en ningún caso, el consejo de un profesional
-        médico. Si crees que tienes síntomas compatibles con el COVID-19 ponte
-        en contacto con el teléfono correspondiente a tu Comunidad.
+        {{ text }}
       </p>
     </div>
   </div>
@@ -33,7 +30,6 @@ export default {
   background-color: navy;
   border-radius: 12px;
   color: white;
-  margin: 1% 5%;
   padding-left: 20px;
   padding-right: 20px;
 }

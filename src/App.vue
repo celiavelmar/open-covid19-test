@@ -41,10 +41,28 @@ h1 {
   color: cornflowerblue;
 }
 
+h3 {
+  margin-top: 40px;
+  color: cornflowerblue;
+}
+
 h2 {
   margin: 0;
   font-weight: 700;
   color: cornflowerblue;
+}
+
+p {
+  text-align: justify;
+  text-align-last: left;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+li {
+  text-align: justify;
 }
 
 button {

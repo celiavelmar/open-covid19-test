@@ -1,10 +1,22 @@
 <template>
   <div>
     <p class="question">{{ question }}</p>
-    <input type="radio" :name="name" value="true" :id="name + 'True'" />
+    <input
+      type="radio"
+      :name="name"
+      value="true"
+      :id="name + 'True'"
+      required
+    />
     <label :for="name + 'True'">Sí</label>
     <br />
-    <input type="radio" :name="name" value="false" :id="name + 'False'" />
+    <input
+      type="radio"
+      :name="name"
+      value="false"
+      :id="name + 'False'"
+      required
+    />
     <label :for="name + 'False'">No</label>
   </div>
 </template>

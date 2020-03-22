@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Test from '../views/Test.vue';
+import Results from '../views/Results.vue';
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,16 @@ const routes = [
     path: '/test',
     name: 'Test',
     component: Test
+  },
+  {
+    path: '/results',
+    name: 'Results',
+    component: Results,
+    props: true
+  },
+  {
+    path: '*',
+    redirect: '/'
   }
 ];
 

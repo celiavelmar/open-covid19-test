@@ -28,7 +28,13 @@
         si quieres conocer el algoritmo que usa dicha aplicación (y también
         esta) y cómo lo he descubierto o ver el código fuente.
       </p>
-      <info-panel></info-panel>
+      <info-panel
+        class="home-info-panel"
+        text="La información obtenida a través del uso de esta aplicación no sustituye
+        ni pretende sustituir, en ningún caso, el consejo de un profesional
+        médico. Si crees que tienes síntomas compatibles con el COVID-19 ponte
+        en contacto con el teléfono correspondiente a tu Comunidad."
+      ></info-panel>
       <div class="center">
         <router-link to="/test">
           <button>¡Entendido! Llévame al test</button>
@@ -51,11 +57,6 @@ export default {
 </script>
 
 <style>
-p {
-  text-align: justify;
-  text-align-last: left;
-}
-
 a {
   color: cornflowerblue;
 }
@@ -68,6 +69,10 @@ a {
 
 .home-p {
   padding: 1% 5%;
+}
+
+.home-info-panel {
+  margin: 1% 5%;
 }
 
 .margin-container {
