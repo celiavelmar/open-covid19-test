@@ -36,7 +36,7 @@
           </li>
           <li>
             Guarda la ropa sucia en una bolsa cerrada y lávala por separado a
-            60-90.
+            60-90º.
           </li>
           <li>
             Elimina tus residuos por separado utilizando un cubo con tapa.
@@ -83,6 +83,10 @@
       >
         Vídeos de la Comunidad de Madrid con consejos y recomendaciones para
         evitar la transmisión en la convivencia con una persona con síntomas
+      </a>
+      <br /><br />
+      <a href="https://www.who.int/health-topics/coronavirus" target="_blank">
+        Web de la Organización Mundial de la Salud para el Coronavirus
       </a>
       <div>
         <router-link to="/test">
