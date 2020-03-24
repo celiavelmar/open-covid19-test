@@ -10,7 +10,7 @@ Puedes acceder a él a través de este enlace: https://celiavelmar.github.io/ope
 
 ### Ingeniería inversa
 
-Haciendo un poco de ingeniería inversa me he topado con el enrevesado algoritmo para el que se ha necesitado la colaboración de, al menos, seis multinacionales (según consta en la propia web de la aplicación): Google, Telefónica, Goggo Network, Ferrovial, Carto, Forcemanager y Mendesaltren.
+Haciendo un poco de "ingeniería inversa" me he topado con el enrevesado algoritmo para el que se ha necesitado la colaboración de, al menos, seis multinacionales (según consta en la propia web de la aplicación): Google, Telefónica, Goggo Network, Ferrovial, Carto, Forcemanager y Mendesaltren.
 
 El algoritmo es el siguiente:
 
