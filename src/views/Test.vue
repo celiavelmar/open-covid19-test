@@ -60,15 +60,14 @@ export default {
     getEvaluation(submitEvent) {
       const questions = submitEvent.target;
       const answers = {
-        airShortness: questions.airShortness.value === 'true' ? true : false,
-        fever: questions.fever.value === 'true' ? true : false,
-        dryCough: questions.dryCough.value === 'true' ? true : false,
-        closeContact: questions.closeContact.value === 'true' ? true : false,
-        mucus: questions.mucus.value === 'true' ? true : false,
-        muscularPain: questions.muscularPain.value === 'true' ? true : false,
-        gastrointestinal:
-          questions.gastrointestinal.value === 'true' ? true : false,
-        twentyDays: questions.twentyDays.value === 'true' ? true : false
+        airShortness: questions.airShortness.value === 'true',
+        fever: questions.fever.value === 'true',
+        dryCough: questions.dryCough.value === 'true',
+        closeContact: questions.closeContact.value === 'true',
+        mucus: questions.mucus.value === 'true',
+        muscularPain: questions.muscularPain.value === 'true',
+        gastrointestinal: questions.gastrointestinal.value === 'true',
+        twentyDays: questions.twentyDays.value === 'true'
       };
       const scores = {
         airShortness: 60,
@@ -80,20 +79,14 @@ export default {
         gastrointestinal: 0,
         twentyDays: -15
       };
+      
       let score = 0;
-
       for (let answer in answers) {
-        if (answers[answer]) {
-          score += scores[answer];
-        }
+          score += answers[answer] ? scores[answer] : 0;
       }
 
       this.$store.commit('filledInTest');
-      if (score >= 30) {
-        this.$store.commit('hasSympthoms', true);
-      } else {
-        this.$store.commit('hasSympthoms', false);
-      }
+      this.$store.commit('hasSympthoms', score >= 30);
       this.showResults();
     },
     showResults() {
