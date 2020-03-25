@@ -70,10 +70,13 @@ export default {
         twentyDays: -15
       };
 
-      const score = Object.keys(scores).reduce( (accumulator, scoreName) => {        
-        return accumulator + (questions[scoreName].value === 'true' ? scores[scoreName] : 0);
-      },0);
-      
+      const score = Object.keys(scores).reduce((accumulator, scoreName) => {
+        return (
+          accumulator +
+          (questions[scoreName].value === 'true' ? scores[scoreName] : 0)
+        );
+      }, 0);
+
       this.$store.commit('filledInTest');
       this.$store.commit('hasSympthoms', score >= 30);
       this.showResults();
