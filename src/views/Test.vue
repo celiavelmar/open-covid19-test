@@ -69,14 +69,11 @@ export default {
         gastrointestinal: 0,
         twentyDays: -15
       };
-      let score = 0;
 
-      Object.keys(scores).forEach(scoreName => {
-        if (questions[scoreName].value === 'true') {
-          score += scores[scoreName];
-        }
-      });
-
+      let score = Object.keys(scores).reduce( (accumulator, scoreName) => {        
+        return accumulator + (questions[scoreName].value === 'true' ? scores[scoreName] : 0);
+      },0);
+      
       this.$store.commit('filledInTest');
       this.$store.commit('hasSympthoms', score >= 30);
       this.showResults();
