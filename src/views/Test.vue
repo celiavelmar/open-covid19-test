@@ -70,7 +70,7 @@ export default {
         twentyDays: -15
       };
 
-      let score = Object.keys(scores).reduce( (accumulator, scoreName) => {        
+      const score = Object.keys(scores).reduce( (accumulator, scoreName) => {        
         return accumulator + (questions[scoreName].value === 'true' ? scores[scoreName] : 0);
       },0);
       
